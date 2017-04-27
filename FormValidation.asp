@@ -58,6 +58,16 @@
                 End IF
             %>
         </p>
+        <!-- 
+            The below example demonstrates how to store a global value that can be accessed from any page
+            in the ASP application.
+        -->
+        <p>
+            <% 
+                application("name") = "Aaron Covington"
+                Response.Write(application("name"))
+            %>
+        </p>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script type = "text/javascript"src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
         <script src="Script.js"></script>
